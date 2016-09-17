@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ME=$(whoami)
+
+SUBLIME_SETTINGS_PATH=/Users/$ME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+DOTFILE_SETTINGS_PATH=/Users/$ME/dotfiles/sublime
+
+mv "$SUBLIME_SETTINGS_PATH/Preferences.sublime-settings" "$SUBLIME_SETTINGS_PATH/Preferences.sublime-settings.orig"
+mv "$SUBLIME_SETTINGS_PATH/Package\ Control.sublime-settings" "$SUBLIME_SETTINGS_PATH/Package\ Control.sublime-settings.orig"
+
+ln -s "$DOTFILE_SETTINGS_PATH/Preferences.sublime-settings" "$SUBLIME_SETTINGS_PATH/Preferences.sublime-settings"
+ln -s "$DOTFILE_SETTINGS_PATH/Package\ Control.sublime-settings" "$SUBLIME_SETTINGS_PATH/Package\ Control.sublime-settings"
