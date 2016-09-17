@@ -4,7 +4,24 @@ chmod +x scripts/*
 
 for file in $(echo scripts/*)
 do
-  echo "-> $file"
+  echo "--> executing $file"
 
   ./$file
+done
+
+for file in $(echo dots/.*)
+do
+  if [ -f "$file" ]; then
+    filename=$(basename "$file")
+
+    echo "----> linking $filename"
+
+    if [ -f ~/$filename.orig ]; then
+      rm ~/$filename
+    else
+      mv ~/$filename ~/$filename.orig
+    fi
+
+    ln -s ~/dotfiles/$file ~/$filename
+  fi
 done
