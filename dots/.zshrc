@@ -9,8 +9,11 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="/usr/local/Cellar:$PATH"
 export PATH="/usr/local/Cellar/android-sdk/24.4.1_1/tools/:$PATH"
 
+source ~/.aliases
 source $ZSH/oh-my-zsh.sh
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+alias
