@@ -1,0 +1,10 @@
+#!/bin/sh
+
+chmod +x scripts/*
+
+for file in $(echo scripts/*)
+do
+  echo "-> $file"
+
+  ./$file
+done
