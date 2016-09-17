@@ -13,9 +13,6 @@ if ! type "git" > /dev/null; then
   brew install git
 fi
 
-echo ".... installing node"
-brew install node
-
 echo ".... installing tig"
 brew install tig
 
