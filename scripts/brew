@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if ! type "brew" > /dev/null; then
+  echo ".... brew install"
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+echo ".... updating brew"
+brew update && brew upgrade && brew cleanup
+
+echo ".... installing node"
+brew install node
+
+echo ".... installing tig"
+brew install tig
+
+echo ".... installing ag"
+brew install ag
+
+echo ".... installing wget"
+brew install wget
+
+echo ".... installing curl"
+brew install curl
+
+echo ".... installing htop"
+brew install htop
+
+
+echo ".... brew cleanup"
+brew cleanup
