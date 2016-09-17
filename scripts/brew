@@ -8,6 +8,11 @@ fi
 echo ".... updating brew"
 brew update && brew upgrade && brew cleanup
 
+if ! type "git" > /dev/null; then
+  echo ".... installing git"
+  brew install git
+fi
+
 echo ".... installing node"
 brew install node
 
@@ -26,6 +31,22 @@ brew install curl
 echo ".... installing htop"
 brew install htop
 
+echo ".... installing caskroom/cask/brew-cask"
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+# echo ".... installing iterm2"
+# brew cask install iterm2
+# echo ".... installing google-chrome"
+# brew cask install google-chrome
+# echo ".... installing slack"
+# brew cask install slack
+# echo ".... installing virtualbox"
+# brew cask install virtualbox
+# echo ".... installing vagrant"
+# brew cask install vagrant
+# echo ".... installing vlc"
+# brew cask install vlc
 
 echo ".... brew cleanup"
 brew cleanup
