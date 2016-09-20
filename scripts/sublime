@@ -19,5 +19,12 @@ else
   mv "$SUBLIME_SETTINGS_PATH/Package\ Control.sublime-settings" "$SUBLIME_SETTINGS_PATH/Package\ Control.sublime-settings.orig"
 fi
 
+if [ -f "$SUBLIME_SETTINGS_PATH/Default\ (OSX).sublime-keymap.orig" ]; then
+  rm "$SUBLIME_SETTINGS_PATH/Default\ (OSX).sublime-keymap"
+else
+  mv "$SUBLIME_SETTINGS_PATH/Default\ (OSX).sublime-keymap" "$SUBLIME_SETTINGS_PATH/Default\ (OSX).sublime-keymap.orig"
+fi
+
+ln -s "$DOTFILE_SETTINGS_PATH/Default\ (OSX).sublime-keymap" "$SUBLIME_SETTINGS_PATH/Default\ (OSX).sublime-keymap"
 ln -s "$DOTFILE_SETTINGS_PATH/Preferences.sublime-settings" "$SUBLIME_SETTINGS_PATH/Preferences.sublime-settings"
 ln -s "$DOTFILE_SETTINGS_PATH/Package\ Control.sublime-settings" "$SUBLIME_SETTINGS_PATH/Package\ Control.sublime-settings"

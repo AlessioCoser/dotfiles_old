@@ -1,0 +1,79 @@
+[
+  // goto_definition
+  {
+    "keys": ["alt+command+down"],
+    "command": "goto_definition"
+  },
+
+  // ctags
+  {
+    "keys": ["ctrl+]"],
+    "command": "navigate_to_definition"
+  },
+  {
+    "keys": ["ctrl+["],
+    "command": "jump_back"
+  },
+  {
+    "keys": ["super+alt+p"],
+    "command": "rebuild_tags"
+  },
+
+  // go to line
+  {
+    "keys": ["super+l"],
+    "command": "show_overlay",
+    "args": {"overlay": "goto", "text": ":"}
+  },
+
+  // redo
+  {
+    "keys": ["super+alt+z"],
+    "command": "redo"
+  },
+
+  // go to symbol
+  {
+    "keys": ["super+y"],
+    "command": "show_overlay",
+    "args": {"overlay": "goto", "text": "@"}
+  },
+
+  // show in project drawer
+  {
+    "keys": ["ctrl+super+r"],
+    "command": "reveal_in_side_bar"
+  },
+
+  // focus on side bar
+  {
+    "keys": ["ctrl+shift+tab"],
+    "command": "focus_side_bar"
+  },
+
+  // focus back in buffer
+  {
+    "keys": ["ctrl+tab"],
+    "command": "focus_group",
+    "args": {"group": 0}
+  },
+
+  // close all other tabs
+  {
+    "keys": ["super+alt+w"],
+    "command": "close_other_tabs"
+  },
+
+  // copy file name
+  {
+    "keys": ["super+shift+c"],
+    "command": "copy_path_to_clipboard"
+  },
+  { "keys": ["super+shift+v"], "command": "paste" },
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  {
+    "keys": ["super+alt+]"],
+    "command": "reindent",
+    "args": { "single_line": false }
+  }
+]
