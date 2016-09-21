@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo ".... installing caskroom/cask/brew-cask"
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+echo ".... installing iterm2"
+brew cask install iterm2
+echo ".... installing sizeup"
+brew cask install sizeup
+echo ".... installing jumpcut"
+brew cask install jumpcut
+echo ".... installing google-chrome"
+brew cask install google-chrome
+echo ".... installing slack"
+brew cask install slack
+echo ".... installing virtualbox"
+brew cask install virtualbox
+echo ".... installing vagrant"
+brew cask install vagrant
+echo ".... installing vlc"
+brew cask install vlc
+
+echo ".... brew cleanup"
+brew cleanup
