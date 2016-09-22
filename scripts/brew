@@ -16,6 +16,9 @@ fi
 echo ".... installing tig"
 brew install tig
 
+echo ".... installing autojump"
+brew install autojump
+
 echo ".... installing ag"
 brew install ag
 
