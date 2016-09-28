@@ -31,5 +31,11 @@ brew install curl
 echo ".... installing htop"
 brew install htop
 
+echo ".... installing awscli"
+brew install awscli
+
+echo ".... installing tmate"
+brew install tmate
+
 echo ".... brew cleanup"
 brew cleanup
