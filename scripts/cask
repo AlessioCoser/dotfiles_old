@@ -22,6 +22,8 @@ echo ".... installing vagrant"
 brew cask install vagrant
 echo ".... installing vlc"
 brew cask install vlc
+echo ".... installing hyper"
+brew cask install hyper
 
 echo ".... brew cleanup"
 brew cleanup
