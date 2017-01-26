@@ -2,3 +2,4 @@
 
 alias notes="vi ~/.my-notes.txt"
 alias v="vagrant"
+alias gdiff="git diff --color | diff-so-fancy"

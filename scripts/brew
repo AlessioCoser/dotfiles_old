@@ -16,6 +16,9 @@ fi
 echo ".... installing tig"
 brew install tig
 
+echo ".... installing diff-so-fancy"
+brew install diff-so-fancy
+
 echo ".... installing autojump"
 brew install autojump
 
@@ -39,3 +42,4 @@ brew install tmate
 
 echo ".... brew cleanup"
 brew cleanup
+
