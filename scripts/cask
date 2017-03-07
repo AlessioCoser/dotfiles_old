@@ -20,6 +20,8 @@ echo ".... installing virtualbox-extension-pack"
 brew cask install virtualbox-extension-pack
 echo ".... installing vagrant"
 brew cask install vagrant
+echo ".... installing docker"
+brew cask install docker
 echo ".... installing vlc"
 brew cask install vlc
 
