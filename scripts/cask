@@ -26,6 +26,8 @@ echo ".... installing docker"
 brew cask install docker
 echo ".... installing vlc"
 brew cask install vlc
+echo ".... installing chefdk"
+brew cask install chefdk
 
 echo ".... brew cleanup"
 brew cleanup
