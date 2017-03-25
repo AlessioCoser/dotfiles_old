@@ -1,4 +1,13 @@
 "*":
+  "atom-material-ui":
+    colors: {}
+    tabs:
+      compactTabs: true
+    treeView:
+      compactList: true
+    ui:
+      animations: false
+      panelContrast: true
   core:
     audioBeep: false
     disabledPackages: [
@@ -18,6 +27,7 @@
       "spell-check"
       "timecop"
       "welcome"
+      "atom-icons"
     ]
     ignoredNames: [
       ".git"
@@ -32,7 +42,7 @@
     openEmptyEditorOnStart: false
     telemetryConsent: "no"
     themes: [
-      "material-ui"
+      "atom-material-ui"
       "atom-material-syntax"
     ]
   editor:
@@ -42,8 +52,10 @@
   "exception-reporting":
     userId: "b0e96639-067b-42d5-b3bc-fc5ea493469b"
   "file-icons":
-    coloured: false
     tabPaneIcon: false
   "tree-view": {}
+  "tree-view-autoresize-ide":
+    hover:
+      peek: false
   welcome:
     showOnStartup: false
