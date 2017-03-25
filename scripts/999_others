@@ -3,5 +3,5 @@
 brew install watchman
 npm install -g react-native-cli
 
-
+gem install berkshelf
 gem install travis
