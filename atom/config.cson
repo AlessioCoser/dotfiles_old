@@ -1,4 +1,5 @@
 "*":
+  "atom-ctags": {}
   "atom-material-ui":
     colors: {}
     tabs:
@@ -28,6 +29,7 @@
       "timecop"
       "welcome"
       "atom-icons"
+      "symbols-view"
     ]
     ignoredNames: [
       ".git"
@@ -40,6 +42,9 @@
       "vendor"
     ]
     openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "atom-ctags"
+    ]
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
@@ -53,6 +58,7 @@
     userId: "b0e96639-067b-42d5-b3bc-fc5ea493469b"
   "file-icons":
     tabPaneIcon: false
+  "goto-definition": {}
   "tree-view": {}
   "tree-view-autoresize-ide":
     hover:
