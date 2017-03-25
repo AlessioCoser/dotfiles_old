@@ -40,6 +40,8 @@ brew install awscli
 echo ".... installing tmate"
 brew install tmate
 
+echo ".... brew install hub"
+brew install hub
+
 echo ".... brew cleanup"
 brew cleanup
-
