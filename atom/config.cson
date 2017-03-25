@@ -1,0 +1,49 @@
+"*":
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "about"
+      "archive-view"
+      "autoflow"
+      "background-tips"
+      "bookmarks"
+      "language-c"
+      "language-clojure"
+      "language-coffee-script"
+      "language-go"
+      "language-mustache"
+      "language-objective-c"
+      "language-toml"
+      "metrics"
+      "spell-check"
+      "timecop"
+      "welcome"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
+      "vendor"
+    ]
+    openEmptyEditorOnStart: false
+    telemetryConsent: "no"
+    themes: [
+      "material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    fontSize: 18
+    invisibles: {}
+    showInvisibles: true
+  "exception-reporting":
+    userId: "b0e96639-067b-42d5-b3bc-fc5ea493469b"
+  "file-icons":
+    coloured: false
+    tabPaneIcon: false
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
