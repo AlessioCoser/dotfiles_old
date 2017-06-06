@@ -59,7 +59,11 @@
   "file-icons":
     tabPaneIcon: false
   "goto-definition": {}
-  "tree-view": {}
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
+  "linter-ui-default": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "tree-view-autoresize-ide":
     hover:
       peek: false
