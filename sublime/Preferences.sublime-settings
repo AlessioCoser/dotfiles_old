@@ -30,7 +30,7 @@
 		"rel",
 		"build"
 	],
-	"font_size": 23,
+	"font_size": 18,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
@@ -69,7 +69,6 @@
 		80
 	],
 	"save_on_focus_lost": true,
-	"scroll_past_end": true,
 	"show_encoding": true,
 	"show_line_endings": true,
 	"tab_size": 2,

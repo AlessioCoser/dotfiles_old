@@ -30,6 +30,7 @@
       "welcome"
       "atom-icons"
       "symbols-view"
+      "language-gfm"
     ]
     ignoredNames: [
       ".git"
