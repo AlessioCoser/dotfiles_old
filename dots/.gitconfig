@@ -1,0 +1,11 @@
+[user]
+  name = Alessio Coser
+  email = alessio.coser@xpeppers.com
+[push]
+  default = simple
+  followTags = true
+[color "diff-highlight"]
+  oldNormal = red
+  oldHighlight = red bold 52
+  newNormal = green
+  newHighlight = green bold 22
