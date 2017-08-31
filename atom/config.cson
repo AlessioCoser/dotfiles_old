@@ -52,7 +52,6 @@
       "atom-material-syntax"
     ]
   editor:
-    fontSize: 18
     invisibles: {}
     showInvisibles: true
   "exception-reporting":
@@ -60,9 +59,11 @@
   "file-icons":
     tabPaneIcon: false
   "goto-definition": {}
+  "linter-js-standard": {}
   "linter-rubocop":
     disableWhenNoConfigFile: true
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "tree-view":
     hideVcsIgnoredFiles: true
   "tree-view-autoresize-ide":
