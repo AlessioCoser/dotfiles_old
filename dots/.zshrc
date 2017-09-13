@@ -9,6 +9,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="/usr/local/Cellar:$PATH"
 export PATH="/usr/local/Cellar/android-sdk/24.4.1_1/tools:$PATH"
 
+export GOPATH=~/Workspace/go
+export GOBIN="$GOPATH/bin"
+export PATH="$GOBIN:$PATH"
+
 source ~/.aliases
 source $ZSH/oh-my-zsh.sh
 

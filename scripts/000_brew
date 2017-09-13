@@ -43,5 +43,8 @@ brew install tmate
 echo ".... brew install hub"
 brew install hub
 
+echo ".... brew install go"
+brew install go
+
 echo ".... brew cleanup"
 brew cleanup
