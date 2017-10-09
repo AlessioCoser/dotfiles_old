@@ -64,8 +64,7 @@
     disableWhenNoConfigFile: true
   "linter-ui-default":
     showPanel: true
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   "tree-view-autoresize-ide":
     hover:
       peek: false

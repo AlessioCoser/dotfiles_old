@@ -28,6 +28,8 @@ echo ".... installing vlc"
 brew cask install vlc
 echo ".... installing chefdk"
 brew cask install chefdk
+echo ".... installing screenhero"
+brew cask install screenhero
 
 echo ".... brew cleanup"
 brew cleanup
