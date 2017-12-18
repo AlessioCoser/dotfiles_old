@@ -9,3 +9,7 @@
   oldHighlight = red bold 52
   newNormal = green
   newHighlight = green bold 22
+[url "git@bitbucket.org:"]
+	insteadOf = https://api.bitbucket.org/
+[url "git@bitbucket.org/"]
+	insteadOf = https://api.bitbucket.org/

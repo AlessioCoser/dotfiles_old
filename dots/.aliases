@@ -6,3 +6,4 @@ alias gdiff="git diff --color | diff-so-fancy | less"
 alias git=hub
 alias d-c=docker-compose
 alias docker-clean="docker ps -aqf status=exited|xargs docker rm && docker images -qf dangling=true|xargs docker rmi"
+alias torrent="docker run -d --rm -v ~/Downloads:/data -p 6800:6800 -p 9100:8080 --name='webui-aria2' alessiocoser/webui-aria2"
