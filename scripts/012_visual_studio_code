@@ -1,0 +1,39 @@
+#!/bin/bash
+
+if ! type "code" > /dev/null; then
+  brew cask install visual-studio-code
+fi
+
+CODE_SETTINGS_PATH=/Users/$(whoami)/Library/Application\ Support/Code/User
+DOTFILE_SETTINGS_PATH=/Users/$(whoami)/dotfiles/vscode
+
+sleep 5
+
+# installing all extensions
+code --install-extension jprestidge.theme-material-theme
+code --install-extension PKief.material-icon-theme
+code --install-extension PeterJausovec.vscode-docker
+code --install-extension chenxsan.vscode-standardjs
+code --install-extension christian-kohler.npm-intellisense
+code --install-extension gogocrow.jsx-beautify
+code --install-extension mohsen1.prettify-json
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension otoniel-isidoro.vscode-ruby-ctags
+code --install-extension rebornix.Ruby
+code --install-extension taichi.react-beautify
+
+# copy settings
+if [ -f "$CODE_SETTINGS_PATH/settings.json.orig" ]; then
+  rm "$CODE_SETTINGS_PATH/settings.json"
+else
+  mv "$CODE_SETTINGS_PATH/settings.json" "$CODE_SETTINGS_PATH/settings.json.orig"
+fi
+ln -s "$DOTFILE_SETTINGS_PATH/settings.json" "$CODE_SETTINGS_PATH/settings.json"
+
+# copy keybindings
+if [ -f "$CODE_SETTINGS_PATH/keybindings.json.orig" ]; then
+  rm "$CODE_SETTINGS_PATH/keybindings.json"
+else
+  mv "$CODE_SETTINGS_PATH/keybindings.json" "$CODE_SETTINGS_PATH/keybindings.json.orig"
+fi
+ln -s "$DOTFILE_SETTINGS_PATH/keybindings.json" "$CODE_SETTINGS_PATH/keybindings.json"

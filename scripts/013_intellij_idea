@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo ".... installing iterm2"
+brew cask install intellij-idea-ce
