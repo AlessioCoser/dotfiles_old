@@ -1,0 +1,72 @@
+"*":
+  "atom-ctags": {}
+  "atom-material-ui":
+    colors: {}
+    tabs:
+      compactTabs: true
+    treeView:
+      compactList: true
+    ui:
+      animations: false
+      panelContrast: true
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "about"
+      "archive-view"
+      "autoflow"
+      "background-tips"
+      "bookmarks"
+      "language-c"
+      "language-clojure"
+      "language-coffee-script"
+      "language-go"
+      "language-mustache"
+      "language-objective-c"
+      "language-toml"
+      "metrics"
+      "spell-check"
+      "timecop"
+      "welcome"
+      "atom-icons"
+      "symbols-view"
+      "language-gfm"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
+      "vendor"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "atom-ctags"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    invisibles: {}
+    showInvisibles: true
+  "exception-reporting":
+    userId: "b0e96639-067b-42d5-b3bc-fc5ea493469b"
+  "file-icons":
+    tabPaneIcon: false
+  "goto-definition": {}
+  "linter-js-standard": {}
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
+  "linter-ui-default":
+    showPanel: true
+  "tree-view": {}
+  "tree-view-autoresize-ide":
+    hover:
+      peek: false
+  welcome:
+    showOnStartup: false
