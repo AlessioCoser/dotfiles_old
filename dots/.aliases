@@ -7,3 +7,4 @@ alias git=hub
 alias d-c=docker-compose
 alias docker-clean="docker ps -aqf status=exited|xargs docker rm && docker images -qf dangling=true|xargs docker rmi"
 alias http-server="python -m SimpleHTTPServer"
+alias youtube-dl="docker run --rm -v $(pwd):/wd -i ivoputzer/youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]' $@"
