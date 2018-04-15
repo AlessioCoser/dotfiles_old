@@ -5,7 +5,7 @@ if ! type "subl" > /dev/null; then
 fi
 
 SUBLIME_SETTINGS_PATH=/Users/$(whoami)/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-DOTFILE_SETTINGS_PATH=/Users/$(whoami)/dotfiles/sublime
+DOTFILE_SETTINGS_PATH=/Users/$(whoami)/dotfiles/.config/sublime
 
 if [ -f "$SUBLIME_SETTINGS_PATH/Preferences.sublime-settings.orig" ]; then
   rm "$SUBLIME_SETTINGS_PATH/Preferences.sublime-settings"
