@@ -5,7 +5,7 @@ if ! type "code" > /dev/null; then
 fi
 
 CODE_SETTINGS_PATH=/Users/$(whoami)/Library/Application\ Support/Code/User
-DOTFILE_SETTINGS_PATH=/Users/$(whoami)/dotfiles/vscode
+DOTFILE_SETTINGS_PATH=/Users/$(whoami)/dotfiles/.config/vscode
 
 sleep 5
 
