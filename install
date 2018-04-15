@@ -1,19 +1,33 @@
 #!/bin/sh
+set -e
 
 COMMAND=$1
+PATH="$HOME/dotfiles"
+
+xcode-select --install || true
+sudo xcodebuild -license accept || true
+
+if [ -e $PATH/.git ]; then
+  cd $PATH && git pull
+else
+  git clone https://github.com/AlessioCoser/dotfiles.git $PATH
+fi
 
 function print_waiting_title {
   echo "------------------------------"
   echo $1
   echo "------------------------------"
-  sleep 5
+  sleep 3
 }
 
 if [ -z ${COMMAND} ]; then
-  echo "Usage: $0 [all, scripts, dots]"
-  exit 1
+  COMMAND="all"
 fi
 
+if [ "$COMMAND" -ne "all" ] && [ "$COMMAND" -ne "scripts" ] && [ "$COMMAND" -ne "dots" ]; then
+	echo "Usage: $0 [all, scripts, dots]"
+  exit 1
+fi
 
 if [ "$COMMAND" == "all" ] || [ "$COMMAND" == "dots" ]; then
   print_waiting_title "linking dot-files"
