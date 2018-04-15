@@ -24,7 +24,7 @@ else
   mkdir "$ATOM_SETTINGS_PATH"
 fi
 
-for file in $(echo atom/*)
+for file in $(echo .config/atom/*)
 do
   filePath="$DOTFILES_PATH/$file"
   newFilePath="$ATOM_SETTINGS_PATH/$(basename $file)"
