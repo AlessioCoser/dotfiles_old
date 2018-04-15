@@ -4,8 +4,6 @@ echo ".... installing caskroom/cask/brew-cask"
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
-echo ".... installing iterm2"
-brew cask install iterm2
 echo ".... installing sizeup"
 brew cask install sizeup
 echo ".... installing jumpcut"
