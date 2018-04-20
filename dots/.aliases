@@ -4,10 +4,10 @@ alias notes="vi ~/.my-notes.txt"
 alias v="vagrant"
 alias gdiff="git diff --color | diff-so-fancy | less"
 alias git=hub
+alias g=git
 alias d="docker"
 alias dops="do ps --format \"table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Names}}\" $@"
 alias doco=docker-compose
 alias docker-clean="docker ps -aqf status=exited|xargs docker rm && docker images -qf dangling=true|xargs docker rmi"
 alias http-server="python -m SimpleHTTPServer"
 alias youtube-dl="docker run --rm -v $(pwd):/wd -i ivoputzer/youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]' $@"
-alias tig="tig --all $@"
