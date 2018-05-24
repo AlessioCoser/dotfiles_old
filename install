@@ -2,15 +2,15 @@
 set -e
 
 COMMAND=$1
-PATH="$HOME/dotfiles"
+DOTSPATH="$HOME/dotfiles"
 
 xcode-select --install || true
 sudo xcodebuild -license accept || true
 
-if [ -e $PATH/.git ]; then
-  cd $PATH && git pull
+if [ -e $DOTSPATH/.git ]; then
+  cd $DOTSPATH && git pull
 else
-  git clone https://github.com/AlessioCoser/dotfiles.git $PATH
+  git clone https://github.com/AlessioCoser/dotfiles.git $DOTSPATH
 fi
 
 function print_waiting_title {
