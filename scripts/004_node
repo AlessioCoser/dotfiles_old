@@ -1,3 +1,4 @@
 #!/bin/bash
 
-brew install node
+brew install n
+n lts
