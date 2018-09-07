@@ -37,5 +37,6 @@
     "editor.detectIndentation": false,
     "editor.trimAutoWhitespace": true,
     "extensions.ignoreRecommendations": true,
-    "sublimeTextKeymap.promptV3Features": true
+    "sublimeTextKeymap.promptV3Features": true,
+    "workbench.statusBar.feedback.visible": false
   }
