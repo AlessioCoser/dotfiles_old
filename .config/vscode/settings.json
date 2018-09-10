@@ -5,8 +5,8 @@
     "editor.minimap.enabled": false,
     "explorer.openEditors.visible": 0,
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Sublime Material Theme - Dark",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Material Theme",
+    "workbench.iconTheme": "eq-material-theme-icons",
     "workbench.activityBar.visible": true,
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "onFocusChange",
@@ -38,5 +38,6 @@
     "editor.trimAutoWhitespace": true,
     "extensions.ignoreRecommendations": true,
     "sublimeTextKeymap.promptV3Features": true,
-    "workbench.statusBar.feedback.visible": false
+    "workbench.statusBar.feedback.visible": false,
+    "javascript.updateImportsOnFileMove.enabled": "never"
   }
