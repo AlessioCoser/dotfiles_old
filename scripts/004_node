@@ -1,4 +1,5 @@
 #!/bin/bash
 
 brew install n
+sudo chown -R $(whoami):staff /usr/local/n
 n lts
