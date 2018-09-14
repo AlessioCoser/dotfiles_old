@@ -1,5 +1,4 @@
 export ZSH=~/.oh-my-zsh
-export ANDROID_HOME=/usr/local/share/android-sdk
 
 ZSH_THEME="zhann"
 
