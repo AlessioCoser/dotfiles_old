@@ -43,7 +43,9 @@ if [ "$COMMAND" == "all" ] || [ "$COMMAND" == "dots" ]; then
       if [ -f ~/$filename.orig ]; then
         rm ~/$filename
       else
-        mv ~/$filename ~/$filename.orig
+	if [ -f ~/$filename ]; then
+          mv ~/$filename ~/$filename.orig
+        fi
       fi
 
       ln -s ~/dotfiles/$file ~/$filename
