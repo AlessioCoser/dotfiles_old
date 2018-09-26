@@ -1,4 +1,11 @@
 {
+    "workbench.colorCustomizations": {
+      "[Material Theme]": {
+        "sideBar.background": "#202c31",
+        "editor.background": "#243238",
+        "sideBar.border": "#202b31"
+      }
+    },
     "window.zoomLevel": 0,
     "editor.fontSize": 18,
     "editor.scrollBeyondLastLine": false,
@@ -7,7 +14,6 @@
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "Material Theme",
     "workbench.iconTheme": "eq-material-theme-icons",
-    "workbench.activityBar.visible": true,
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "onFocusChange",
     "files.exclude": {
@@ -38,6 +44,11 @@
     "editor.trimAutoWhitespace": true,
     "extensions.ignoreRecommendations": true,
     "sublimeTextKeymap.promptV3Features": true,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "explorer.confirmDelete": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.activityBar.visible": false,
     "workbench.statusBar.feedback.visible": false,
-    "javascript.updateImportsOnFileMove.enabled": "never"
+    "workbench.view.alwaysShowHeaderActions": true
   }
