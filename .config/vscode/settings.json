@@ -3,7 +3,9 @@
       "[Material Theme]": {
         "sideBar.background": "#202c31",
         "editor.background": "#243238",
-        "sideBar.border": "#202b31"
+        "sideBar.border": "#243238",
+        "terminal.border": "#243238",
+        "panel.background": "#202c31"
       }
     },
     "window.zoomLevel": 0,
