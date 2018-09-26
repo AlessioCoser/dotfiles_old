@@ -40,6 +40,14 @@
         "**/.vagrant": true,
         "**/.serverless": true
     },
+    "newFile": {
+      "defaultBaseFileName": "",
+      "relativeTo": "project", // "root" or "project"
+      "defaultFileExtension": ".js",
+      "rootDirectory": "~",
+      "showPathRelativeTo": "none", // "project" or "none"
+      "expandBraces": false // setting to true will allow for creating multiple files such as `new-folder/{file1,file2}.js`
+    },
     "standard.enable": true,
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
