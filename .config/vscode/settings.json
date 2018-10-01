@@ -58,7 +58,7 @@
     "explorer.confirmDelete": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "workbench.statusBar.feedback.visible": false,
     "workbench.view.alwaysShowHeaderActions": true
   }
