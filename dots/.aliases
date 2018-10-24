@@ -1,5 +1,16 @@
 #!/bin/bash
 
+function subdir () {
+  red="\033[01;31m"
+  cyan="\033[01;36m"
+
+  if [[ $# -eq 0 ]]; then
+    echo "${red}There is no command to run on each subdir${red}"
+  else
+    ls -d */ | xargs -n1 bash -c 'cd $0; echo -e "'"${cyan}"'-------------------------\n--- '"$(echo "$@")"' (in $0)\n-------------------------'"${cyan}"'";'"$(echo "$@")"';echo -e "\n"'
+  fi
+}
+
 alias notes="vi ~/.my-notes.txt"
 alias v="vagrant"
 alias gdiff="git diff --color | diff-so-fancy | less"
