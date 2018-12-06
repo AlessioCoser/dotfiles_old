@@ -24,3 +24,4 @@ alias docker-clean="docker ps -aqf status=exited|xargs docker rm && docker image
 alias http-server="python -m SimpleHTTPServer"
 alias youtube-dl="docker run --rm -v $(pwd):/wd -i ivoputzer/youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]' $@"
 alias md5sum="md5 -r"
+alias mvn="docker run -it --rm -v \"${PWD}\":/usr/src/mymaven -v \"$HOME/.m2\":/root/.m2 -v \"${PWD}/target:/usr/src/mymaven/target\" -w /usr/src/mymaven maven mvn $@"
