@@ -15,6 +15,8 @@ function subdir () {
 function git-aws () {
   git config --global credential.UseHttpPath true
   git config --global credential.helper '!aws codecommit credential-helper --profile "'$1'"'
+  git ${@:2}
+  git config --global credential.UseHttpPath false
 }
 
 alias notes="vi ~/.my-notes.txt"
