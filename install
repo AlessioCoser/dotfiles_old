@@ -30,6 +30,19 @@ if [ "$COMMAND" -ne "all" ] && [ "$COMMAND" -ne "scripts" ] && [ "$COMMAND" -ne 
   exit 1
 fi
 
+if [ "$COMMAND" == "all" ] || [ "$COMMAND" == "scripts" ]; then
+  print_waiting_title "installing scripts"
+
+  chmod +x scripts/*
+
+  for file in $(echo scripts/*)
+  do
+    echo "--> executing $file"
+
+    ./$file
+  done
+fi
+
 if [ "$COMMAND" == "all" ] || [ "$COMMAND" == "dots" ]; then
   print_waiting_title "linking dot-files"
 
@@ -50,18 +63,5 @@ if [ "$COMMAND" == "all" ] || [ "$COMMAND" == "dots" ]; then
 
       ln -s ~/dotfiles/$file ~/$filename
     fi
-  done
-fi
-
-if [ "$COMMAND" == "all" ] || [ "$COMMAND" == "scripts" ]; then
-  print_waiting_title "installing scripts"
-
-  chmod +x scripts/*
-
-  for file in $(echo scripts/*)
-  do
-    echo "--> executing $file"
-
-    ./$file
   done
 fi
