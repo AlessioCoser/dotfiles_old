@@ -22,6 +22,8 @@ echo ".... installing docker"
 brew cask install docker
 echo ".... installing vlc"
 brew cask install vlc
+echo ".... installing KeePassX"
+brew cask install KeePassX
 
 echo ".... brew cleanup"
 brew cleanup
