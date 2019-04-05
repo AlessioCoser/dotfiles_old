@@ -24,6 +24,7 @@ echo ".... installing vlc"
 brew cask install vlc
 echo ".... installing KeePassX"
 brew cask install KeePassX
-
+echo ".... installing Google Backup and Sync"
+brew cask install google-backup-and-sync
 echo ".... brew cleanup"
 brew cleanup

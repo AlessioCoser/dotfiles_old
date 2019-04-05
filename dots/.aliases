@@ -13,6 +13,7 @@ function subdir () {
 }
 
 function git-aws () {
+  security delete-internet-password -l "git-codecommit.eu-west-1.amazonaws.com"
   git config --global credential.UseHttpPath true
   git config --global credential.helper '!aws codecommit credential-helper --profile '$1''
   git ${@:2}
