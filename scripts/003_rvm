@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if ! type "rvm" > /dev/null; then
-  curl -sSL https://get.rvm.io | bash -s stable
-  source ~/.rvm/scripts/rvm
-  rvm install 2.3.1
-  rvm use 2.3.1
-fi

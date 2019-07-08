@@ -16,9 +16,6 @@ fi
 echo ".... installing tig"
 brew install tig
 
-echo ".... installing diff-so-fancy"
-brew install diff-so-fancy
-
 echo ".... installing autojump"
 brew install autojump
 
@@ -37,14 +34,8 @@ brew install htop
 echo ".... installing awscli"
 brew install awscli
 
-echo ".... installing tmate"
-brew install tmate
-
 echo ".... brew install hub"
 brew install hub
-
-echo ".... brew install go"
-brew install go
 
 echo ".... brew cleanup"
 brew cleanup
