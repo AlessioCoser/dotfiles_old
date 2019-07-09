@@ -28,5 +28,7 @@ echo ".... installing KeePassX"
 brew cask install KeePassX
 echo ".... installing Google Backup and Sync"
 brew cask install google-backup-and-sync
+echo ".... installing Zoom.us"
+brew cask install zoomus
 echo ".... brew cleanup"
 brew cleanup
