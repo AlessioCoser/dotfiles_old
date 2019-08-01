@@ -8,5 +8,4 @@ antigen bundle danielefongo/shapeshift
 antigen bundle git
 antigen bundle autojump
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
