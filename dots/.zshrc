@@ -9,3 +9,4 @@ antigen bundle git
 antigen bundle autojump
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
+shape-shift AlessioCoser/shapeshift-theme
