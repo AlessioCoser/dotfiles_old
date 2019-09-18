@@ -1,5 +1,25 @@
 #!/bin/bash
 
+function substitute_suffix() {
+  if [[ $# -ne 2 ]]; then
+    echo "Renames all files that have required suffix with given other suffix"
+    echo "Usage:"
+    echo "$0 suffix_to_find suffix_to_replace"
+    echo "----"
+    echo "example:"
+    echo "$0 _old.json _new.json"
+    echo "# this will renames 'test_old.json' to 'test_new.json' in current folder"
+  else
+    SUFFIX_PREV=$1
+    SUFFIX_NEW=$2
+
+    for file in *$SUFFIX_PREV; do
+        FILE=`echo $file | sed -e "s|$SUFFIX_PREV|$SUFFIX_NEW|g"`
+        mv "$file" "$FILE"
+    done
+  fi
+}
+
 function subdir () {
   reset="\033[0m"
   red="\033[01;31m"
