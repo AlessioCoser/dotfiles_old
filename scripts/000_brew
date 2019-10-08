@@ -13,6 +13,9 @@ if ! type "git" > /dev/null; then
   brew install git
 fi
 
+echo ".... installing diff-so-fancy"
+brew install diff-so-fancy
+
 echo ".... installing antigen"
 brew install antigen
 
