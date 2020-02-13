@@ -4,6 +4,7 @@ export PATH="/usr/local/Cellar:$PATH"
 source ~/.aliases
 source /usr/local/share/antigen/antigen.zsh
 
+antigen bundle AlessioCoser/zsh_aws_aliases
 antigen bundle danielefongo/shapeshift
 antigen bundle git
 antigen bundle autojump
