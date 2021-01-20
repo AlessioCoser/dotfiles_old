@@ -66,31 +66,19 @@
         "**/.vagrant": true,
         "**/.serverless": true
     },
-    "newFile": {
-      "defaultBaseFileName": "",
-      "relativeTo": "project", // "root" or "project"
-      "defaultFileExtension": ".js",
-      "rootDirectory": "~",
-      "showPathRelativeTo": "none", // "project" or "none"
-      "expandBraces": false // setting to true will allow for creating multiple files such as `new-folder/{file1,file2}.js`
-    },
-    "standard.enable": true,
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
     "editor.trimAutoWhitespace": true,
     "extensions.ignoreRecommendations": true,
-    "sublimeTextKeymap.promptV3Features": true,
     "javascript.updateImportsOnFileMove.enabled": "never",
     "explorer.confirmDelete": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "workbench.activityBar.visible": true,
-    "workbench.statusBar.feedback.visible": false,
     "workbench.view.alwaysShowHeaderActions": true,
     "materialTheme.accent": "Teal",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.jediEnabled": false,
     "python.languageServer": "Microsoft",
     "[html]": {
       "editor.defaultFormatter": "mohd-akram.vscode-html-format"
